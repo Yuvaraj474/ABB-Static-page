@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genix Auctions - Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <!-- add icon link -->
+    <link rel="icon" href= 
+    "../images/logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Genix Auctions Logo" class="logo">
+    </header>
+    <div class="scrollable-content">
+        <div class="container">
+            <div class="signup-form">
+                <h1>Genix Auctions</h1>
+                <h2>Sign up</h2>
+                <p>New bidders, as soon as you have submitted your information you will be eligible to bid in the auction.</p>
+                <form>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Olivia" required>
+                    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Rhye" required>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="olivia@untitledui.com" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="•••••••••••••••" required>
+                    <p class="password-criteria">Password criteria check</p>
+                    
+                    <label class="checkbox-container">
+                        Receive outbid emails
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <br>
+                    
+                    <a href="../End/end.html">
+                    <button type="submit">Submit</button>
+                    </a>
+                    
+                    <div class="social-login">
+                        <p>or sign up with</p>
+                        <div class="social-buttons">
+                            <button class="social-button google">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button class="social-button apple">
+                                <i class="fab fa-apple"></i> Apple
+                            </button>
+                            <button class="social-button facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="auction-rules">Want to know more? <a href="#">Auction rules</a></p>
+                </form>
+            </div>
+            <div class="illustration">
+                <img src="../images/Signup.png" alt="Illustration">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

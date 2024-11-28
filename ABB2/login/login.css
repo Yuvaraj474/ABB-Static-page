@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-container {
+    flex: 1;
+    padding: 50px;
+    min-width: 300px;
+}
+
+.login-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    margin: 0;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-login .social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login .social-button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.social-login .social-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-login .social-button.google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.social-login .social-button.apple {
+    background-color: #000;
+    color: #fff;
+}
+
+.social-login .social-button.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.illustration img {
+    
+    height: max-content;
+    max-height: 1000%;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .illustration {
+        order: -1;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,232 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.scrollable-content {
+    margin-top: 70px; /* Adjust based on header height */
+    width: 100%;
+    overflow-y: auto;
+    height: calc(100vh - 70px); /* Adjust based on header height */
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px auto; /* Centering the container with some margin */
+}
+
+.signup-form {
+    padding: 40px;
+    flex: 1;
+}
+
+.signup-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.signup-form h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.signup-form p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.password-criteria {
+    color: red;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-login .social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login .social-button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.social-login .social-button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-login .social-button.google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.social-login .social-button.apple {
+    background-color: #000;
+    color: #fff;
+}
+
+.social-login .social-button.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.auction-rules {
+    text-align: center;
+}
+
+.auction-rules a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auction-rules a:hover {
+    text-decoration: underline;
+}
+
+.illustration {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration img {
+    height: max-content;
+    max-height: 1000%;
+}

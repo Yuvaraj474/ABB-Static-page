@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left .logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.header-right nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.header-right nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.header-right nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header-right nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.header-right nav ul li:hover .dropdown {
+    display: block;
+}
+
+.header-right nav ul li .dropdown li {
+    margin: 0;
+}
+
+.header-right nav ul li .dropdown li a {
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.header-right nav ul li .dropdown li a:hover {
+    background-color: #2c67f2;
+    color: white;
+}
+
+.profile-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-section .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.auction-management {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width:400px
+}
+
+.auction-management h2 {
+    text-align: center;
+}
+
+#auction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#auction-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+
+#auction-form button {
+    padding: 10px 20px;
+    background-color: #2c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#auction-form button:hover {
+    background-color: #1a46b3;
+}
+
+.auction-items, .home-page-items {
+    margin-top: 20px;
+}
+
+.auction-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.auction-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.auction-item h3,
+.auction-item p {
+    margin: 5px 0;
+}
+
+.auction-item button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.auction-item button:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: #063260;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: #2c67f2;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}

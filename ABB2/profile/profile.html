@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Manage Auctions</title>
+    <!-- add icon link -->
+    <link rel="icon" href= 
+    "../images/logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="../images/logo1.png" alt="Genix Auctions Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Auctions</a></li>
+                    <li><a href="#">Profile <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">View Profile</a></li>
+                            <li><a href="#">My Bids</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-section">
+            <img src="../images/profile.jpeg" alt="User Profile Picture" class="profile-pic">
+            <h1>Olivia Smith</h1>
+            <p>Email: olivia@example.com</p>
+        </div>
+
+        <div class="auction-management">
+            <h2>Manage Your Auctions</h2>
+            <form id="auction-form">
+                <input type="text" id="item-name" placeholder="Item Name" required>
+                <input type="number" id="min-bid" placeholder="Minimum Bid" required>
+                <input type="number" id="current-bid" placeholder="Current Bid" required>
+                <input type="text" id="end-time" placeholder="End Time" required>
+                <input type="file" id="item-image" accept="image/*" required>
+                <button type="submit">Add Item</button>
+            </form>
+
+            <div class="auction-items" id="auction-items"></div>
+        </div>
+
+        <div class="home-page-items" id="home-page-items"></div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="../images/logo1.png" alt="Genix Auctions Logo">
+        </div>
+        <div class="footer-socials">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
+        <p>&copy; 2024 Genix Auctions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
